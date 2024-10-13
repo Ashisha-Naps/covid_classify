@@ -2,4 +2,4 @@ librosa
 xgboost
 streamlit-audiorecorder
 numpy
-ffmpeg
+ffmpeg-python
