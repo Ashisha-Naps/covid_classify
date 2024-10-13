@@ -1,2 +1,5 @@
 librosa
 xgboost
+streamlit-audiorecorder
+numpy
+sklearn

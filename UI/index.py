@@ -1,7 +1,7 @@
 import streamlit as st
 from audiorecorder import audiorecorder
-from st_files_connection import FilesConnection
-import boto3
+#from st_files_connection import FilesConnection
+#import boto3
 import io
 import uuid
 import librosa
@@ -10,11 +10,11 @@ import numpy as np
 from sklearn.preprocessing import LabelEncoder,StandardScaler
 label_encoder = LabelEncoder()
 model = XGBClassifier(use_label_encoder=False, eval_metric='mlogloss')
-def uploadFileToS3(bucket, fileName, fileBytes):
-    session = boto3.Session()
-    s3 = session.client('s3', region_name=st.secrets["AWS_DEFAULT_REGION"],aws_access_key_id = st.secrets["AWS_ACCESS_KEY_ID"],aws_secret_access_key = st.secrets["AWS_SECRET_ACCESS_KEY"])
-    s3.upload_fileobj(fileBytes, 
-    bucket, fileName)
+#def uploadFileToS3(bucket, fileName, fileBytes):
+    #session = boto3.Session()
+    #s3 = session.client('s3', region_name=st.secrets["AWS_DEFAULT_REGION"],aws_access_key_id = st.secrets["AWS_ACCESS_KEY_ID"],aws_secret_access_key = st.secrets["AWS_SECRET_ACCESS_KEY"])
+    #s3.upload_fileobj(fileBytes, 
+    #bucket, fileName)
 
 def load_model():
     
