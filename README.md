@@ -28,6 +28,21 @@ The recall is the ratio tp / (tp + fn) where tp is the number of true positives 
 The F-beta score can be interpreted as a weighted harmonic mean of the precision and recall, where an F-beta score reaches its best value at 1 and worst score at 0.
 
 The F-beta score weights recall more than precision by a factor of beta. beta == 1.0 means recall and precision are equally important.
+
+
+Accuracy: 0.83
+              precision    recall  f1-score   support
+
+     healthy       0.84      0.94      0.89      2528
+ symptomatic       0.78      0.57      0.66      1004
+
+    accuracy                           0.83      3532
+   macro avg       0.81      0.75      0.77      3532
+weighted avg       0.83      0.83      0.82      3532
+
+
+![image](https://github.com/user-attachments/assets/6f689a8d-4cee-44c9-8975-09c88b2d7386)
+
     
     
     
